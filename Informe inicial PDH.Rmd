@@ -1,0 +1,74 @@
+---
+title: "Estadísticas PDH"
+author: "Roberto Carcache"
+date: "March 1, 2020"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Primero se va a efectuar una recodificación de los datos, en donde el grupo de tratamiento será marcado como 1 y el grupo de control será marcado como 0:
+
+```{r}
+library(readxl)
+PDH <- read_excel("~/Work/Consultorías/AAS-John Jay/Equipos Guatemala/P8_Febrero 2020/Base PDH_final.xlsx", sheet = "final")
+#Vamos a comenzar con el grupo de tratamiento/control
+grupo <- NULL
+grupo[PDH$`Tipo expediente`=="Tratamiento"]=1
+grupo[PDH$`Tipo expediente`=="Control"]=0
+PDH <- cbind.data.frame(PDH,grupo)
+#Ahora a realizar algunas pruebas de medias 
+tratamiento <- PDH[PDH$grupo==1, ]
+control <- PDH[PDH$grupo==0, ]
+```
+
+## Variable 1: Fecha de notificación de resolución 
+Primero se va a realizar una prueba t para la notificación de resolución. En la primera prueba se recodificó la variable en donde 1, indica una notificación y 0 indica que no hubo una notificación
+```{r}
+t.test(control$Notificacion, tratamiento$Notificacion, alternative = c("two.sided"),
+       paired = F, var.equal=F)
+```
+**Lectura: no se rechaza la hipótesis nula, no hay una diferencia significativa en las medias**
+
+Ahora se va a realizar la prueba t para la notificación de resolución con la codificación original: 
+```{r}
+t.test(control$`FECHA de notificación de resolución`, 
+       tratamiento$`FECHA de notificación de resolución`, alternative = c("two.sided"),
+       paired = F, var.equal=F)
+```
+**Lectura: no se rechaza la hipótesis nula, no hay una diferencia significativa en las medias**
+
+
+## Variable 2: Fecha de solicitud de informe circunstanciado
+Primero se va a realizar una prueba t para la solicitud de informe. En la primera prueba se recodificó la variable en donde 1, indica una solicitud y 0 indica que no hubo una solicitud
+```{r}
+t.test(control$Solicitud_inforcircuns, tratamiento$Solicitud_inforcircuns, alternative = c("two.sided"),paired = F, var.equal=F)
+```
+**Lectura: no se rechaza la hipótesis nula, no hay una diferencia significativa en las medias**
+
+Ahora se va a realizar la prueba t para la solicitud de informe con la codificación original: 
+```{r}
+t.test(control$`FECHA de solicitud de informe circunstanciado`, 
+       tratamiento$`FECHA de solicitud de informe circunstanciado`,
+       alternative = c("two.sided"),paired = F, var.equal=F)
+```
+**Lectura: Solo se rechaza la hipótesis nula a un 90%**
+
+
+## Variable 3: Fecha de solicitud de informe circunstanciado
+Primero se va a realizar una prueba t para el informe circunstanciado. En la primera prueba se recodificó la variable en donde 1, indica un informe y 0 indica que no hubo un informe. 
+```{r}
+t.test(control$Informe_cirucunstancia, tratamiento$Informe_cirucunstancia, alternative = c("two.sided"),
+       paired = F, var.equal=F)
+```
+**Lectura: no se rechaza la hipótesis nula, no hay una diferencia significativa en las medias**
+
+Ahora se va a realizar la prueba t para la fecha del informe circumstanciado con la codificación original: 
+```{r}
+t.test(control$`FECHA del informe cinrcunstanciado (respuesta recibida)`, 
+       tratamiento$`FECHA del informe cinrcunstanciado (respuesta recibida)`,
+       alternative = c("two.sided"),paired = F, var.equal=F)
+```
+**Lectura: no se rechaza la hipótesis nula, no hay una diferencia significativa en las medias**
