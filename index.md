@@ -1,7 +1,6 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+## Welcome to my blog!
 
-![Image of fast.ai logo](images/logo.png)
+My name is Roberto Carcache Flores. I am now in the last year of my MSc in Actuarial Science at ISEG, University of Lisbon. I hope to publish some past research along with other interesting tutorials using R and Python. 
 
-## This is a title
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+PS. I used [fast.ai](https://www.fast.ai) to build this blog 
