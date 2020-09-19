@@ -115,7 +115,7 @@ mean(z)
     ## [1] 108.2
 
 Part 3: Working with Matrices
-=============================
+----------------------------
 
 For this last section we will work with matrices using R. The logic is a
 bit different since matrices have their own special codes. In this
