@@ -1,3 +1,5 @@
+# Post 1: Basics with R
+
 I will keep things very simple in this first tutorial about the basics
 with R. The objective is just to get familiar with the syntax and the
 way objects are constructed. This is also a tutorial for me since I am
@@ -113,7 +115,7 @@ mean(z)
     ## [1] 108.2
 
 Part 3: Working with Matrices
-=============================
+--------------------------
 
 For this last section we will work with matrices using R. The logic is a
 bit different since matrices have their own special codes. In this
