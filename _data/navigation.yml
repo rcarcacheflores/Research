@@ -1,11 +1,11 @@
 # Site navigation links
 - title: Home
-  url: /index/
+  url: /
 
 
 - title: About
   url: /about/
 
 - title: Blog Posts 
-  url: /blog/
+  url: /posts/
 
