@@ -1,3 +1,5 @@
+# Post 1A: Basics with R
+
 I will keep things very simple in this first tutorial about the basics
 with R. The objective is just to get familiar with the syntax and the
 way objects are constructed. This is also a tutorial for me since I am
