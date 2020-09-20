@@ -1,4 +1,4 @@
-![header](images/header.jpg)
+![header](images/header2.jpg)
 
 
 ## Welcome to my blog!
