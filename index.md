@@ -1,3 +1,5 @@
+![header](images/header.jpg)
+
 ## Welcome to my blog!
 
 ![Cave journey](images/cave2.jpg)
