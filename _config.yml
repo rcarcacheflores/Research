@@ -30,7 +30,7 @@ plugins:
   - jekyll-octicons
   - jekyll-github-metadata
 
-logo: images/headermin.png
+logo: headermin.png
 
 titles_from_headings:
   enabled:     true
