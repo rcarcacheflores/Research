@@ -10,11 +10,9 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Roberto Carcache Flores # add your name
 author-img: rcf.jpg # add your photo
-about-author: I am currently pursuing an MSc. in Actuarial Science. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
+about-author: Economist and future Acturary with a passion for data analysis and modelling # add description
 social-github: rcarcacheflores # add your Github handle
-social-linkedin: # add your Linkedin handle
+social-linkedin: https://www.linkedin.com/in/roberto-carcache-flores-05b5711a6/
 social-email: rcarcacheflores@outlook.com
 
 # Disqus
