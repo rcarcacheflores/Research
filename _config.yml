@@ -5,14 +5,13 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: "/Research" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Roberto Carcache Flores # add your name
 author-img: rcf.jpg # add your photo
 about-author: Economist and future Acturary with a passion for data analysis and modelling # add description
 social-github: rcarcacheflores # add your Github handle
-social-linkedin: https://www.linkedin.com/in/roberto-carcache-flores-05b5711a6/
+social-linkedin: roberto-carcache-flores-05b5711a6/
 social-email: rcarcacheflores@outlook.com
 
 # Disqus
