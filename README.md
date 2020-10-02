@@ -2,4 +2,4 @@
 
 **Welcome!** This is the repository to my blog. Here you can also find the datasets used in my tutorials.
 
-[logo](logo.png)
+[logo](/assets/img/logo.png)
