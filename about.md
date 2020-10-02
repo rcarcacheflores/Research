@@ -1,4 +1,8 @@
-# About
+---
+layout: page
+title: About
+permalink: /about/
+---
 
 ![Logo](images/logo2.jpg)
 
