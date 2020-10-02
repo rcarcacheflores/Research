@@ -1,9 +1,3 @@
----
-layout: page
-title: Home
-permalink: /home/
----
-
 ## Welcome to my blog!
 
 ![Cave journey](images/cave.jpg)
