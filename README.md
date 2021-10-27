@@ -1,4 +1,4 @@
-# Reseach with R and Python 
+# Reseach Blog
 
 ![logo1](assets/img/logo1.jpg)
 
